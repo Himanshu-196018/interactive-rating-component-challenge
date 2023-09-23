@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* styling body */
+body {
+  background-color: var(--very-dark-blue);
+  font-size: 15px;
+  font-family: Overpass;
+  color: white;
+}
+
+/* style for main content/component */
+main {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/* style for card component */
+.card {
+  padding: 25px;
+  width: 325px;
+  height: 360px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+}
+
+/* style for user feedback card */
+.feedback-card {
+  display: none;
+}
+.star,
+.num {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.feedback-card > h1 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.feedback-card > p {
+  margin-top: 16px;
+  color: var(--light-grey);
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+.num {
+  margin-top: 25px;
+  color: var(--light-grey);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: white;
+    transition: all 0.5s ease-out;
+  }
+}
+
+.feedback-card > button {
+  margin-top: 20px;
+  width: 275px;
+  height: 44px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 22px;
+  border: none;
+  background-color: var(--orange);
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--orange);
+    transition: all 0.4s ease-out;
+  }
+}
+
+/* style for thankyou card coponent */
+.response-card {
+  /* display: none; */
+  text-align: center;
+}
+
+.response-card > img {
+  margin-top: 10px;
+  height: 100px;
+}
+
+img + p {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 20px;
+  color: orange;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+h2 {
+  margin-top: 25px;
+}
+h2 + p {
+  margin-top: 16px;
+  color: var(--light-grey);
+}
+
+/* style for footer of the page */
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+p > a {
+  color: var(--orange);
+}
+
+/* style for large/desktop screen */
+@media screen and (width > 500px) {
+}
