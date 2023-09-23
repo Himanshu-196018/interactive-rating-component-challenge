@@ -13,14 +13,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="scripts/action.js"></script>
+    <script src="scripts/action.js" defer></script>
     <title>Interactive Rating Components</title>
   </head>
   <body>
     <!-- main section containing two compnents -->
     <main>
       <!-- rating card component -->
-      <section class="card feedback-card">
+      <section class="card" id="feedback-card">
         <div class="star">
           <img src="images/icon-star.svg" alt="" />
         </div>
@@ -36,11 +36,13 @@
           <div class="num" id="rate4">4</div>
           <div class="num" id="rate5">5</div>
         </div>
-        <button type="button">Submit</button>
+        <button type="button" id="subButton" onclick="clickEvent()">
+          Submit
+        </button>
       </section>
 
       <!-- generated response card component -->
-      <section class="card response-card">
+      <section class="card" id="response-card">
         <img src="images/illustration-thank-you.svg" alt="" />
         <p>You selected <span id="rated">0</span> out of 5</p>
         <h2>Thank you!</h2>

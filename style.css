@@ -47,11 +47,11 @@ main {
   justify-content: center;
   align-content: center;
 }
-.feedback-card > h1 {
+#feedback-card > h1 {
   margin-top: 20px;
   font-size: 24px;
 }
-.feedback-card > p {
+#feedback-card > p {
   margin-top: 16px;
   color: var(--light-grey);
 }
@@ -72,7 +72,7 @@ main {
   }
 }
 
-.feedback-card > button {
+#feedback-card > button {
   margin-top: 20px;
   min-width: 100%;
   height: 44px;
@@ -93,12 +93,12 @@ main {
 }
 
 /* style for thankyou card coponent */
-.response-card {
+#response-card {
   display: none;
   text-align: center;
 }
 
-.response-card > img {
+#response-card > img {
   margin-top: 10px;
   height: 100px;
 }
@@ -142,16 +142,16 @@ p > a {
     height: 50px;
     width: 50px;
   }
-  .feedback-card > h1 {
+  #feedback-card > h1 {
     margin-top: 30px;
     font-size: 28px;
   }
-  .feedback-card > button {
+  #feedback-card > button {
     margin-top: 30px;
   }
 
   /* style for thankyou card coponent */
-  .response-card > img {
+  #response-card > img {
     margin-top: 10px;
     height: 110px;
   }
