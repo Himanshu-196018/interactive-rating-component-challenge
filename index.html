@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/action.js"></script>
+    <title>Interactive Rating Components</title>
+  </head>
+  <body>
+    <!-- main section containing two compnents -->
+    <main>
+      <!-- rating card component -->
+      <section class="feedback-card">
+        <img src="images/icon-star.svg" alt="" />
+        <h1>How did we do?</h1>
+        <p></p>
+        <div class="rating">
+          <div class="num" id="rate1">1</div>
+          <div class="num" id="rate2">2</div>
+          <div class="num" id="rate3">3</div>
+          <div class="num" id="rate4">4</div>
+          <div class="num" id="rate5">5</div>
+        </div>
+        <button type="button">Submit</button>
+      </section>
+
+      <!-- generated response card component -->
+      <section class="response-card">
+        <img src="images/illustration-thank-you.svg" alt="" />
+        <p>You selected <span id="rated"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Himanshu-196018">@Himanshu</a>.
+      </p>
+    </footer>
+  </body>
+</html>
